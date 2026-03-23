@@ -3,7 +3,7 @@
 **Interactive mapping and territorial observatory of the Bauges Massif Regional Natural Park**
 *M1 OTG • UNISTRA Strasbourg • 2025-2026*
 
-**Live demo**: [Add your live demo URL here]
+**Live demo**: [https://bapti100.github.io/webmap_pnr.m1otg.baptiste.io/](https://bapti100.github.io/webmap_pnr.m1otg.baptiste.io/)
 
 ---
 
