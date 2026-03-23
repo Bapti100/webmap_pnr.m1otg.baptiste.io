@@ -68,9 +68,7 @@
 ├── patrimoine_culturel.html  # Cultural and landscape heritage
 ├── patrimoine_naturel.html   # Natural heritage and biodiversity
 ├── amenagement_territoire.html # Territorial planning
-├── style.css                 # Global styles and responsive design
-├── app.js                    # JavaScript logic
-└── assets/                   # Images, GeoJSON, and other resources
+└── style.css                 # Global styles and responsive design
 ```
 
 ---
@@ -78,7 +76,7 @@
 ## Author
 
 **M1 OTG — UNISTRA Strasbourg (2025-2026)**
-- Baptiste De-Livry
+- Baptiste FANTOU
 
 ---
 
