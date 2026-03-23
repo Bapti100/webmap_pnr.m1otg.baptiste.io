@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <script type="module" src="https://js.arcgis.com/5.0/embeddable-components/"></script>
+  <script src="app.js" defer></script>
+  <title>PNR du Massif des Bauges</title>
+</head>
+
+<body>
+  <!-- Haut de page qui est le même sur toute les pages -->
+  <header>
+    <h1>PNR du Massif des Bauges</h1>
+    <p>Un PNR au sein des Préalpes françaises</p>
+    <h2>Pays des deux Savoies</h2>
+  </header>
+  <!-- Menu qui est le même sur toute les pages -->
+  <div class="navigation">
+    <ul>
+      <li><a href="index.html">Observatoire de territoire </a></li>
+      <li><a href="presentation.html">Géographie du territoire</a></li>
+      <li><a href="patrimoine_culturel.html">Patrimoine culturel et paysager</a></li>
+      <li><a href="patrimoine_naturel.html">Patrimoine naturel et biodiversité</a></li>
+      <li><a href="amenagement_territoire.html">Aménagement du territoire</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Texte de présentation de la zone-->
+  <div id="presentation" class="box">
+    <a name="presentation"></a>
+    <h4>Aménagement du territoire</h4>
+    <h3>Enjeux :</h3>
+    <p>• Équilibre urbain/rural : Maîtriser la périurbanisation (pression foncière autour de Chambéry, Annecy,
+      Albertville).</p>
+    <p>• Tourisme durable : Développer une offre respectueuse de l’environnement (hébergements écoresponsables,
+      mobilités douces).</p>
+    <p>• Adaptation climatique : Charte 2025-2040 axée sur la sobriété des ressources et la résilience.</p>
+    <p>• Filières locales : Soutenir l’agriculture, la sylviculture et l’artisanat (bois, fromage, miel).</p>
+    <h3>Projets phares :</h3>
+    <p>• Végétalisation des cours d’école (« Parc Cour Vert »).</p>
+    <p>• Développement des énergies renouvelables et des circuits courts.</p>
+    <p>• Plan de paysage pour préserver les corridors écologiques.</p>
+
+    <div class="table-responsive">
+      <table class="key-figures-table">
+        <thead>
+          <tr>
+            <th>Type de surface (BD TOPO® IGN)</th>
+            <th>Valeurs (limite du PNR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zones de végétation</td>
+            <td>55456,184 Hectare soit 62 %</td>
+          </tr>
+          <tr>
+            <td>Zones d'habitation</td>
+            <td>1135,17 Hectare soit 1,28 %</td>
+          </tr>
+          <tr>
+            <td>Zones d'activité</td>
+            <td>97,3484 Hectare soit 0,11 %</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Add custom element to <body> of your page -->
+    <arcgis-embedded-map style="height:600px;width: 80%;margin: 50px auto;" item-id="6c2eb98ec8c74b6bad5a5516bf5063e8"
+      theme="light" legend-enabled time-zone-label-enabled center="6.1379943,45.6869889" scale="577790.5542885"
+      portal-url="https://unistra.maps.arcgis.com">
+    </arcgis-embedded-map>
+
+  </div>
+  <footer>
+    <p>Site web réalisé par Fantou Baptiste dans le cadre d'un TP.</p>
+  </footer>
+</body>
+
+</html>

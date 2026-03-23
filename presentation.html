@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <script type="module" src="https://js.arcgis.com/5.0/embeddable-components/"></script>
+    <script src="app.js" defer></script>
+    <title>PNR du Massif des Bauges</title>
+</head>
+
+<body>
+    <!-- Haut de page qui est le même sur toute les pages -->
+    <header>
+        <h1>PNR du Massif des Bauges</h1>
+        <p>Un PNR au sein des Préalpes françaises</p>
+        <h2>Pays des deux Savoies</h2>
+    </header>
+    <!-- Menu qui est le même sur toute les pages -->
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html">Observatoire de territoire </a></li>
+            <li><a href="presentation.html">Géographie du territoire</a></li>
+            <li><a href="patrimoine_culturel.html">Patrimoine culturel et paysager</a></li>
+            <li><a href="patrimoine_naturel.html">Patrimoine naturel et biodiversité</a></li>
+            <li><a href="amenagement_territoire.html">Aménagement du territoire</a></li>
+        </ul>
+    </div>
+
+    <!-- Texte de présentation de la zone-->
+    <div id="presentation" class="box">
+        <a name="presentation"></a>
+        <h4>Présentation</h4>
+        <h3>Chiffres clés du PNR du Massif des Bauges</h3>
+        <div class="table-responsive">
+            <table class="key-figures-table">
+                <thead>
+                    <tr>
+                        <th>Indicateur</th>
+                        <th>Valeur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Superficie</td>
+                        <td>85 600 hectares (856 km²)</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de communes</td>
+                        <td>71 (49 en Savoie, 22 en Haute-Savoie)</td>
+                    </tr>
+                    <tr>
+                        <td>Population</td>
+                        <td>Environ 94 000 habitants</td>
+                    </tr>
+                    <tr>
+                        <td>Point culminant</td>
+                        <td>Arcalod (2 217 m)</td>
+                    </tr>
+                    <tr>
+                        <td>Point le plus bas</td>
+                        <td>Vallée de l’Isère (environ 300 m)</td>
+                    </tr>
+                    <tr>
+                        <td>Hauteur moyenne</td>
+                        <td>Territoire de moyenne montagne (altitude moyenne : ~1 000 m)</td>
+                    </tr>
+                    <tr>
+                        <td>Secteurs paysagers</td>
+                        <td>14 sommets &gt; 2 000 m, alpages, forêts, lacs (Annecy, Bourget), vallées</td>
+                    </tr>
+                    <tr>
+                        <td>Sentiers de randonnée</td>
+                        <td>480 km de sentiers de grande randonnée, 500 km de sentiers pédestres</td>
+                    </tr>
+                    <tr>
+                        <td>Rivières</td>
+                        <td>Chéran (Site Rivières Sauvages), Isère, et nombreux ruisseaux</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4>Cartes à intégrer :</h4>
+        <p>
+            • Carte interactive des zones protégées et des espèces.
+            • Dashboard des indicateurs de biodiversité (nombre d’espèces, état des habitats).
+            • Fiches descriptives des écosystèmes et des projets de conservation.
+        </p>
+        <!-- Galerie de cartes ArcGIS -->
+        <h4>Cartes interactives du PNR du Massif des Bauges</h4>
+        <div id="galleryBox">
+
+            <!-- Liste des cartes -->
+            <!-- Add custom element to <body> of your page -->
+			<iframe src="https://storymaps.arcgis.com/stories/c96f33bbc01f418aa09d1bc455c23e20" width="100%"
+                height="500px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
+            <arcgis-embedded-map style="height:600px;width: 80%;margin: 50px auto;"
+                item-id="376aa3a28d3c4c31b92eeeabc1516801" theme="light" 
+                legend-enabled 
+                time-zone-label-enabled 
+                center="6.1379943,45.6869889" 
+                scale="577790.5542885"
+                portal-url="https://unistra.maps.arcgis.com">
+            </arcgis-embedded-map>
+
+
+            <footer>
+                <p>Site web réalisé par Fantou Baptiste dans le cadre d'un TP.</p>
+            </footer>
+</body>
+
+</html>

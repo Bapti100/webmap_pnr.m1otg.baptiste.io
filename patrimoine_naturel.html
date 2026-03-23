@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <script type="module" src="https://js.arcgis.com/5.0/embeddable-components/"></script>
+  <script src="app.js" defer></script>
+  <title>PNR du Massif des Bauges</title>
+</head>
+
+<body>
+  <!-- Haut de page qui est le même sur toute les pages -->
+  <header>
+    <h1>PNR du Massif des Bauges</h1>
+    <p>Un PNR au sein des Préalpes françaises</p>
+    <h2>Pays des deux Savoies</h2>
+  </header>
+  <!-- Menu qui est le même sur toute les pages -->
+  <div class="navigation">
+    <ul>
+      <li><a href="index.html">Observatoire de territoire </a></li>
+      <li><a href="presentation.html">Géographie du territoire</a></li>
+      <li><a href="patrimoine_culturel.html">Patrimoine culturel et paysager</a></li>
+      <li><a href="patrimoine_naturel.html">Patrimoine naturel et biodiversité</a></li>
+      <li><a href="amenagement_territoire.html">Aménagement du territoire</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Texte de présentation de la zone-->
+  <div id="presentation" class="box">
+    <a name="presentation"></a>
+    <h4>Patrimoine naturel et biodiversité</h4>
+    <h3>Faune et flore </h3>
+    <p>• Espèces animales : Chamois, lynx, aigle royal, hermine, 2 800 espèces animales recensées.</p>
+    <p>• Espèces végétales : 1 300 espèces végétales, dont des orchidées rares (sabots de Vénus, cyclamen).</p>
+    <p>• Milieux naturels : Zones humides, pelouses sèches, forêts, alpages.</p>
+    <h3>Actions de préservation :</h3>
+    <p>• Atlas de la Biodiversité Communale (ABC Bauges) pour inventorier et protéger les espèces.</p>
+    <p>• Mesures agri-environnementales dans les alpages.</p>
+    <p>• Sensibilisation du public (animations, sentiers thématiques).</p>
+    
+    <!-- Add custom element to <body> of your page -->
+    <arcgis-embedded-map style="height:600px;width: 80%;margin: 50px auto;" 
+      item-id="5ef4814573504940beaf5a02f00534c7"
+      theme="light" 
+      legend-enabled time-zone-label-enabled center="6.1379943,45.6869889" 
+      scale="577790.5542885"
+      portal-url="https://unistra.maps.arcgis.com">
+    </arcgis-embedded-map>
+
+
+  </div>
+  <footer>
+    <p>Site web réalisé par Fantou Baptiste dans le cadre d'un TP.</p>
+  </footer>
+</body>
+
+</html>
